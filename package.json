@@ -1,0 +1,28 @@
+{
+  "name": "proyecto_final_gianela_chavez",
+  "version": "1.0.0",
+  "description": "Proyecto final del Bootcamp",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giani04/proyecto_final_Gianela_chavez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/giani04/proyecto_final_Gianela_chavez/issues"
+  },
+  "homepage": "https://github.com/giani04/proyecto_final_Gianela_chavez#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
