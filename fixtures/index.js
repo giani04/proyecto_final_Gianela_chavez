@@ -14,6 +14,13 @@ const test = base.test.extend({
     await loginPage.goto();
     await use(loginPage);
   },
+
+  // Fixture encadenada: depende de loginPage y credentials
+  loggedInPage: async ({ page, loginPage, credentials }, use) => {
+    await loginPage.login(credentials.user, credentials.password);
+    await base.expect(page).toHaveURL(/inventory\.html/);
+    await use(page);
+  },
 });
 
 module.exports = { test, expect: base.expect };
