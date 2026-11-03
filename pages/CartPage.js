@@ -10,9 +10,9 @@
   }
 
   
-  async itemCount() {
-    await this.page.locator('.cart_item', { hasText: name }).click();
-  }
+ async itemCount() {
+  return await this.items.count();
+}
 
 }
 
