@@ -1,10 +1,11 @@
-class HomePage {
-  constructor(page) {
+
+  class HomePage {constructor(page) {
     this.page = page;
     this.title = page.locator('.title');
     this.inventoryList = page.locator('.inventory_list');
     this.items = page.locator('.inventory_item');
-    this.sortSelect = page.locator('[data-test="product_sort_container"]');
+    //this.sortSelect = page.locator('[data-test="product_sort_container"]');
+    this.sortSelect = page.locator('[data-test="product-sort-container"]');
     this.cartLink = page.locator('.shopping_cart_link');
     this.cartBadge = page.locator('.shopping_cart_badge');
     this.menuButton = page.locator('#react-burger-menu-btn');
