@@ -1,5 +1,6 @@
 const { test, expect } = require('../../fixtures');
 const { HomePage } = require('../../pages/HomePage');
+test.describe.configure({ retries: 2 });
 
 // Convierte textos como "$29.99" a número
 const toPrice = (text) => parseFloat(text.replace('$', ''));

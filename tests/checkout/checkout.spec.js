@@ -2,6 +2,8 @@ const { test, expect } = require('../../fixtures');
 const { HomePage } = require('../../pages/HomePage');
 const { CheckoutOverviewPage } = require('../../pages/CheckoutOverviewPage');
 const checkoutData = require('./checkout-data.json');
+test.describe.configure({ retries: 0 });
+
 
 test.describe('Checkout', () => {
   let savedSession;

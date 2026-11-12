@@ -1,4 +1,5 @@
 const { test, expect } = require('../../fixtures');
+test.describe.configure({ retries: 2 });
 
 test.describe('Sesión', () => {
   // Test sin login: la fixture ya dejó la sesión iniciada

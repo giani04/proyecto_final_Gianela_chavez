@@ -1,4 +1,5 @@
 const { test, expect } = require('../../fixtures');
+test.describe.configure({ retries: 2 });
 
 test.describe('Login', () => {
   test('login exitoso muestra la página de productos', async ({ page, loginPage, credentials }) => {

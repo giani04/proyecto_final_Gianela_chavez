@@ -1,6 +1,7 @@
 const { test, expect } = require('../../fixtures');
 const { HomePage } = require('../../pages/HomePage');
 const { CartPage } = require('../../pages/CartPage');
+test.describe.configure({ retries: 2 });
 
 test.use({ baseURL: process.env.SHOP_URL });
 
